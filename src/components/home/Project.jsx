@@ -18,7 +18,8 @@ const API = "https://api.github.com";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
 const Project = ({ heading, username, length, specfic }) => {
-  const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
+  const allReposAPI = undefined;
+  // = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
     dummyProject
@@ -30,9 +31,9 @@ const Project = ({ heading, username, length, specfic }) => {
     let repoList = [];
     try {
       // getting all repos
-      const response = await axios.get(allReposAPI);
-      // slicing to the length
-      repoList = [...response.data.slice(0, length)];
+      // const response = await axios.get(allReposAPI);
+      // // slicing to the length
+      // repoList = [...response.data.slice(0, length)];
       // adding specified repos
       try {
         for (let repoName of specfic) {
