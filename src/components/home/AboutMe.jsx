@@ -4,25 +4,25 @@ import { Jumbotron } from "./migration";
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
-  React.useEffect(() => {
-    // const handleRequest = async () => {
-    //   const instaLink = "https://www.instagram.com/";
-    //   const instaQuery = "/?__a=1";
-    //   try {
-    //     const response = await axios.get(instaLink + link + instaQuery);
-    //     setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
-    //   } catch (error) {
-    //     setShowPic(false);
-    //     console.error(error.message);
-    //   }
-    // };
+  // React.useEffect(() => {
+  //   // const handleRequest = async () => {
+  //   //   const instaLink = "https://www.instagram.com/";
+  //   //   const instaQuery = "/?__a=1";
+  //   //   try {
+  //   //     const response = await axios.get(instaLink + link + instaQuery);
+  //   //     setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
+  //   //   } catch (error) {
+  //   //     setShowPic(false);
+  //   //     console.error(error.message);
+  //   //   }
+  //   // };
 
-    // if (link && !pictureLinkRegex.test(link)) {
-    //   handleRequest();
-    // } else {
-    setProfilePicUrl(link);
-    // }
-  });
+  //   // if (link && !pictureLinkRegex.test(link)) {
+  //   //   handleRequest();
+  //   // } else {
+  //   setProfilePicUrl(link);
+  //   // }
+  // },[]);
 
   return (
     <Jumbotron id="aboutme" className="m-0">
@@ -31,7 +31,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           {showPic && (
             <img
               className="border border-secondary rounded-circle"
-              src={profilePicUrl}
+              src={link}
               alt="profilepicture"
               width={imgSize}
               height={imgSize}
