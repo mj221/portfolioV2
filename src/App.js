@@ -110,14 +110,14 @@ const App = () => {
             specfic={repos.specificRepos}
           />
         )}
-        {leadership.show && (
+        {/* {leadership.show && (
           <Leadership
             heading={leadership.heading}
             message={leadership.message}
             img={leadership.images}
             imageSize={leadership.imageSize}
           />
-        )}
+        )} */}
         {skills.show && (
           <Skills
             heading={skills.heading}
