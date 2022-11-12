@@ -26,14 +26,14 @@ const App = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       {navBar.show && <Navbar ref={titleRef} />}
       <>
-        <MainBody
+        {/* <MainBody
           gradient={mainBody.gradientColors}
           title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
           message={mainBody.message}
           icons={mainBody.icons}
           ref={titleRef}
-        />
-        {/* {about.show && (
+        /> */}
+        {about.show && (
           <AboutMe
             heading={about.heading}
             message={about.message}
@@ -43,21 +43,21 @@ const App = () => {
           />
         )}
         {experiences.show && <Experience experiences={experiences} />}
-        {repos.show && (
+        {/* {repos.show && (
           <Project
             heading={repos.heading}
             username={repos.gitHubUsername}
             length={repos.reposLength}
             specfic={repos.specificRepos}
           />
-        )}
+        )} */}
         {skills.show && (
           <Skills
             heading={skills.heading}
             hardSkills={skills.hardSkills}
             softSkills={skills.softSkills}
           />
-        )} */}
+        )}
       </>
 
       <Footer>
