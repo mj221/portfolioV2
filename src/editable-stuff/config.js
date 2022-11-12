@@ -45,8 +45,7 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/avatar.jpeg"),
   imageSize: 375,
-  message:
-   "",
+  message: "",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -60,7 +59,16 @@ const repos = {
   heading: "Recent Personal Projects",
   gitHubUsername: "mj221", //i.e."johnDoe12Gh"
   reposLength: 8,
-  specificRepos: ["gix-exchange","metagram","yield-aggregator","crowdfunding-master","sweeter","covid-shopper-app","kaktana-react-lightweight-charts","ink_substrate_amm"],
+  specificRepos: [
+    "gix-exchange",
+    "metagram",
+    "yield-aggregator",
+    "crowdfunding-master",
+    "sweeter",
+    "covid-shopper-app",
+    "kaktana-react-lightweight-charts",
+    "ink_substrate_amm",
+  ],
 };
 
 // Leadership SECTION
@@ -70,21 +78,21 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/avatar.jpeg"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/avatar.jpeg"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
-    { 
-      img: require("../editable-stuff/avatar.jpeg"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/avatar.jpeg"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
-  }
+    width: "615",
+    height: "450",
+  },
 };
 
 // SKILLS SECTION
@@ -127,23 +135,27 @@ const experiences = {
   heading: "Experiences",
   data: [
     {
-      role: 'EAIT Student Ambassador',// Here Add Company Name
-      companylogo: require('../assets/img/uq.jpeg'),
-      date: 'Jan 2019 – Jan 2020',
-      website: "https://www.uq.edu.au/"
+      role: "EAIT Student Ambassador", // Here Add Company Name
+      companylogo: require("../assets/img/uq.jpeg"),
+      date: "Jan 2019 – Jan 2020",
+      website: "https://www.uq.edu.au/",
     },
     {
-      role: 'Full Stack & Blockchain Developer',
-      companylogo: require('../assets/img/labrys.png'),
-      date: 'Apr 2022 – Current',
-      website: "https://labrys.io/"
+      role: "Full Stack & Blockchain Developer",
+      companylogo: require("../assets/img/labrys.png"),
+      date: "Apr 2022 – Current",
+      website: "https://labrys.io/",
     },
-  ]
-}
+  ],
+};
 
-// Blog SECTION
-// const blog = {
-//   show: false,
-// };
-
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  leadership,
+  getInTouch,
+  experiences,
+};
