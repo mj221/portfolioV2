@@ -33,7 +33,7 @@ const App = () => {
           icons={mainBody.icons}
           ref={titleRef}
         />
-        {about.show && (
+        {/* {about.show && (
           <AboutMe
             heading={about.heading}
             message={about.message}
@@ -57,7 +57,7 @@ const App = () => {
             hardSkills={skills.hardSkills}
             softSkills={skills.softSkills}
           />
-        )}
+        )} */}
       </>
 
       <Footer>
